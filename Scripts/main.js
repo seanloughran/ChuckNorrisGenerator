@@ -28,7 +28,7 @@ $(document).ready(function() {
   $("#newJoke").on("click", loadJoke);
 
   function loadJoke() {
-    $.getJSON("http://api.icndb.com/jokes/random", function(json) {
+    $.getJSON("https://api.icndb.com/jokes/random", function(json) {
       $("#home p").html('"' + json.value.joke + '"');
     });
   };
